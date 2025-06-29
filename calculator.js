@@ -31,3 +31,25 @@ function operatorBtnPressed(operator) {
 }
 //line29 parseInt is used as convertor from text to number value.
 //line29 also means = grab whatever output appears on inputbox, convert it to number and store it in value1.
+
+//Event handler for equal sign button
+function equalBtnPressed() {
+  var value2 = parseInt(document.getElementById("inputBox").value);
+  var finalTotal; //stores the answer
+
+  switch (currentOperator) {
+    case "+":
+      finalTotal = value1 + value2;
+      break;
+    case "-":
+      finalTotal = value1 - value2;
+      break;
+    case "*":
+      finalTotal = value1 * value2;
+      break;
+    case "/":
+      finalTotal = value1 / value2;
+      break;
+  }
+  document.getElementById("inputBox").value = finalTotal; //output the value stored in finalTotal
+}
