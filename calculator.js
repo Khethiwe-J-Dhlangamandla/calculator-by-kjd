@@ -52,4 +52,7 @@ function equalBtnPressed() {
       break;
   }
   document.getElementById("inputBox").value = finalTotal; //output the value stored in finalTotal
+
+  value1 = 0; //line56&57 is preparing for next operation
+  newLine = true;
 }
